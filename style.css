@@ -1,0 +1,14 @@
+*{
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Oazis;
+  src: url(Fonts/Oasis-BW0JV.ttf);
+}
+.navbar-brand{
+  font-family: Oazis;
+}
+.carousel-inner img{
+  height: 90vh;
+  
+}
