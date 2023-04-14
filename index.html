@@ -48,76 +48,159 @@
       </nav>
     </header>
     <article>
-      <div id="carousel" class="carousel slide">
-        <div class="carousel-indicators">
+      <div class="kepvalto">
+        <div id="carousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="4"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="Carousel/c2.png" alt="person" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="Carousel/c1.png" alt="car" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="Carousel/c3.png" alt="news" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="Carousel/c4.png" alt="motor" class="d-block w-100" />
+            </div>
+            <div class="carousel-item active">
+              <img src="Carousel/c5.png" alt="garage" class="d-block w-100" />
+            </div>
+          </div>
           <button
+            class="carousel-control-prev"
             type="button"
             data-bs-target="#carousel"
-            data-bs-slide-to="0"
-            aria-label="Slide 1"
-          ></button>
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Előző</span>
+          </button>
           <button
+            class="carousel-control-next"
             type="button"
             data-bs-target="#carousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carousel"
-            data-bs-slide-to="4"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 5"
-          ></button>
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Következő</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item ">
-            <img src="Carousel/c2.png" alt="person" class="d-block w-100" />
+      </div>
+      <div class="CardContainer">
+        <div class="ContainerModule">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Icons/car-repair.png"
+              alt="reparir"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Autószervíz</h5>
+              <p class="card-text">Autószerelés márkától függetlenűl</p>
+            </div>
           </div>
-          <div class="carousel-item ">
-            <img src="Carousel/c1.png" alt="car" class="d-block w-100" />
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Icons/car-engine.png"
+              alt="general"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Motogenerál</h5>
+              <p class="card-text">Motor teljeskörű felújítása Garanciával!</p>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="Carousel/c3.png" alt="news" class="d-block w-100" />
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="Icons/diagnostic.png"
+              alt="diagnostic"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Diagnosztika</h5>
+              <p class="card-text">Megtaláljuk a hibakód okát</p>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="Carousel/c4.png" alt="motor" class="d-block w-100" />
-          </div>
-          <div class="carousel-item active">
-            <img src="Carousel/c5.png" alt="garage" class="d-block w-100" />
+          <div class="card">
+            <img class="card-img-top" src="Icons/service.png" alt="service" />
+            <div class="card-body">
+              <h5 class="card-title">Karbantartás</h5>
+              <p class="card-text">
+                Elvégezzük atutója idószakos karbantartását
+              </p>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Előző</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Következő</span>
-        </button>
+      </div>
+      <div class="bemutatkozas container">
+        <h2 class="text-white">
+          Autószervíz, Autójavítás, Motorgenerál, Vezérlés csere
+        </h2>
+        <p class="text-white">
+          Üdvözlöm! Engedje meg, hogy bemutassam az autószervizünket.
+        </p>
+        <p class="text-white">
+          Cégünk tapasztalt és megbízható autószerviz, mely az autójának
+          javításával és karbantartásával foglalkozik. Széles körű
+          szakértelemmel és tapasztalattal rendelkezünk a járművek javítása
+          terén, és az ügyfelek elégedettsége mindig a legfontosabb számunkra.
+        </p>
+        <p class="text-white">
+          A szervizünkben dolgozó szakembereink magasan képzettek és hozzáértők
+          a járművek javításában és karbantartásában. Minden esetben alapos
+          diagnosztikai vizsgálatot végzünk, hogy pontosan megállapítsuk az autó
+          hibáit, majd javítási tervet készítünk és az ügyféllel konzultálunk a
+          javításról és az árakról.
+        </p>
+        <p class="text-white">
+          Az autószervizünkben a legmodernebb eszközöket és technológiákat
+          használjuk, hogy gyorsan és hatékonyan végezzük el a javításokat.
+          Emellett minden szervizelt járműre garanciát vállalunk, így biztos
+          lehet abban, hogy az autója jó kezekben van.
+        </p>
+        <p class="text-white">
+          Szolgáltatásaink közé tartozik az általános javítás és karbantartás, a
+          motorok felújítása, az olajcsere, a fékjavítás, az üzemanyagrendszer
+          javítása, a klíma javítása, valamint az elektronikai hibák
+          diagnosztizálása. Mindezek mellett vállaljuk a rendszeres
+          karbantartási szolgáltatásokat is, amelyek segítenek megelőzni a
+          hibákat és a meghibásodásokat.
+        </p>
       </div>
     </article>
     <footer></footer>

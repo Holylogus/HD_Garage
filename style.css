@@ -5,10 +5,49 @@
   font-family: Oazis;
   src: url(Fonts/Oasis-BW0JV.ttf);
 }
+body{
+  background-color: black;
+}
 .navbar-brand{
   font-family: Oazis;
 }
 .carousel-inner img{
-  height: 90vh;
-  
+  height: 300px;
+}
+.carousel-indicators{
+  top: 230px;
+}
+.ContainerModule{
+  position: relative;
+  top: -3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card{
+  margin: 0.5em;
+  width: 10.2rem;
+  background-color: #E7222E;
+  color: black;
+}
+.card p{
+  text-align: center;
+  font-size: 12px;
+  color: black;
+}
+.card-img-top{
+  width: 4.25em;
+  margin: auto;
+}
+.bemutatkozas{
+  background-color: #16588E;
+  font: 16px;
+  padding: 1rem;
+  text-align: center;
+}
+.bemutatkozas h2{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
 }
