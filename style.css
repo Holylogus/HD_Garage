@@ -75,7 +75,13 @@ footer{
   text-align: center;
   font-size: 12px;
   padding: 0;
+  color: #E7222E;
+  padding-bottom: 0.2rem;
 }
 footer p{
-  padding-top: 0.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0;
+}
+footer span{
+  font-weight: bold;
 }
