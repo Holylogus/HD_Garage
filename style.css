@@ -3,12 +3,25 @@
   margin: 0;
   padding: 0;
 }
+
 @font-face {
   font-family: Oazis;
   src: url(Fonts/Oasis-BW0JV.ttf);
 }
+@font-face {
+ 
+  font-family: Carl;
+  src: url(Fonts/CarlGaussPersonalUseOnlyRegular-K7orZ.otf);
+
+  font-family: Mogiune;
+  src: url(Fonts/MoguineSerifPersonalUseItalic-1GvwB.otf);
+}
 body{
   background-color: black;
+}
+.ContainerModule a{
+  text-decoration: none;
+  text-align: center;
 }
 .navbar-brand{
   font-family: Oazis;
@@ -30,6 +43,7 @@ body{
 .card{
   margin: 0.5em;
   width: 10.2rem;
+  height: 180px;
   background-color: #E7222E;
   color: black;
 }
@@ -49,9 +63,14 @@ body{
   text-align: center;
 }
 .bemutatkozas h2{
+  font-family: Carl;
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 1rem;
+  font-weight: bold;
+}
+.bemutatkozas p{
+  font-family: Mogiune;
 }
 .kapcsolat h1{
   font-family: Oazis;
@@ -84,4 +103,20 @@ footer p{
 }
 footer span{
   font-weight: bold;
+}
+.content{
+  background-color: #16588E;
+  font: 16px;
+  padding: 1rem;
+  
+}
+.content h2{
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+  font-family: Carl;
+  font-weight: bold;
+}
+.content p{
+  font-family: Mogiune;
+  text-align: justify;
 }
