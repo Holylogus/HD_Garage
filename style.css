@@ -10,9 +10,6 @@
 }
 @font-face {
  
-  font-family: Carl;
-  src: url(Fonts/CarlGaussPersonalUseOnlyRegular-K7orZ.otf);
-
   font-family: Mogiune;
   src: url(Fonts/MoguineSerifPersonalUseItalic-1GvwB.otf);
 }
@@ -70,7 +67,7 @@ body{
   font-weight: bold;
 }
 .bemutatkozas p{
-  font-family: Mogiune;
+  font-family: Carl;
 }
 .kapcsolat h1{
   font-family: Oazis;
@@ -117,6 +114,6 @@ footer span{
   font-weight: bold;
 }
 .content p{
-  font-family: Mogiune;
+  font-family: Carl;
   text-align: justify;
 }
