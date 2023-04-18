@@ -36,6 +36,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: -2rem;
 }
 .card{
   margin: 0.5em;
@@ -166,6 +167,7 @@ footer span{
     height: 160px;
     background-color: #E7222E;
     color: black;
+    animation: none;
   }
   .bemutatkozas p{
     font-size: 20px;
@@ -182,14 +184,7 @@ footer span{
     margin-top: auto;
     margin-bottom: auto;
   }
-  .company{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  .nyitvatartas{
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
+  
 }
 @media screen and (min-width: 1000px) {
   .ContainerModule{
@@ -204,20 +199,21 @@ footer span{
     height: 700px;
   }
   .card-img-top{
-    width: 140px;
+    width: 90px;
     margin: auto;
   }
   .card{
     margin: 0.5em;
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
     background-color: #E7222E;
     color: black;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    animation: none;
   }
   .card p{
-    font-size: 18px;
+    font-size: 14px;
   }
   .bemutatkozas{
     font-size: 24px;
@@ -226,5 +222,16 @@ footer span{
   .content{
     background-color: #16588E;
     font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card{
+    margin: 0.5em;
+    width: 280px;
+    height: 280px;
+    background-color: #E7222E;
+    color: black;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
