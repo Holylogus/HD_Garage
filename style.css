@@ -193,10 +193,10 @@ footer span{
     
   }
   .carousel-indicators{
-    top: 600px;
+    top: 500px;
   }
   .carousel-inner img{
-    height: 700px;
+    height: 580px;
   }
   .card-img-top{
     width: 90px;
@@ -225,6 +225,10 @@ footer span{
   }
 }
 @media screen and (min-width: 1200px) {
+  .card-img-top{
+    width: 120px;
+    margin: auto;
+  }
   .card{
     margin: 0.5em;
     width: 280px;
@@ -234,4 +238,26 @@ footer span{
     margin-left: 2rem;
     margin-right: 2rem;
   }
-}
+  .card p{
+    font-size: 20px;
+  }
+  .card h5{
+    font-size: 24px;
+  }
+  .carousel-indicators{
+    top: 600px;
+  }
+  .carousel-inner img{
+    height: 700px;
+  }
+  .bemutatkozas p{
+    font-size: 24px;
+    padding: 1rem;
+  }
+  .content p{
+    font-size: 24px;
+    padding: 1rem;
+  }
+  .content h2{
+    padding-left: 1rem;
+  }
