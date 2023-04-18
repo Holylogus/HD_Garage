@@ -35,7 +35,7 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .card{
   margin: 0.5em;
@@ -43,6 +43,7 @@ body{
   height: 180px;
   background-color: #E7222E;
   color: black;
+  cursor: pointer;
 }
 .card p{
   text-align: center;
@@ -115,4 +116,77 @@ footer span{
 .content p{
   font-family: Carl;
   text-align: justify;
+}
+@media screen and (max-width: 540px) {
+  .card{
+    animation: none;
+  }
+}
+@media screen and (min-width: 540px) {
+  .carousel-inner img{
+    height: 400px;
+  }
+  .carousel-indicators{
+    top: 300px;
+  }
+  .card-img-top{
+    width: 55px;
+    margin: auto;
+  }
+  .card{
+    margin: 0.5em;
+    width: 180px;
+    height: 180px;
+    background-color: #E7222E;
+    color: black;
+  }
+  .card p{
+    font-size: 16px;
+  }
+  .card h5{
+    font-size: 20px;
+  }
+  .bemutatkozas p{
+    font-size: 18px;
+  }
+  .content p{
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .ContainerModule{
+    
+    justify-content: center;
+    
+  }
+  .carousel-indicators{
+    top: 600px;
+  }
+  .carousel-inner img{
+    height: 700px;
+  }
+  .card-img-top{
+    width: 140px;
+    margin: auto;
+  }
+  .card{
+    margin: 0.5em;
+    width: 280px;
+    height: 280px;
+    background-color: #E7222E;
+    color: black;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .card p{
+    font-size: 18px;
+  }
+  .bemutatkozas{
+    font-size: 24px;
+    padding: 10rem;
+  }
+  .content{
+    background-color: #16588E;
+    font-size: 20px;
+  }
 }
