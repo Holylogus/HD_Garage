@@ -35,14 +35,20 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item px-3">
-                <a class="nav-link" href="#">Szervíz</a>
-              </li>
+                <li class="nav-item dropdown px-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Szervíz</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="autoszerviz.html" class="dropdown-item">Autószervíz</a></li>
+                      <li><a href="general.html" class="dropdown-item">Motorgenerál</a></li>
+                      <li><a href="diagnosztika.html" class="dropdown-item">Diagnosztika</a></li>
+                      <li><a href="diagnosztika.html" class="dropdown-item">Karbantartás</a></li>
+                    </ul>
+                  </li>
               <li class="nav-item px-3">
                 <a class="nav-link" href="#">Hírek</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#">Kapcsolat</a>
+                <a class="nav-link" href="#kapcsolat" data-bs-scroll>Kapcsolat</a>
               </li>
             </ul>
           </div>
@@ -50,8 +56,81 @@
       </nav>
     </header>
     <article>
-      <div class="content container">
-        <h2 class="text-white">Fékszervíz</h2>
+      <div class="kepvalto">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="4"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img src="Carousel/c2.png" alt="person" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="Carousel/c1.png" alt="car" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="Carousel/c3.png" alt="news" class="d-block w-100" />
+            </div>
+            <div class="carousel-item">
+              <img src="Carousel/c4.png" alt="motor" class="d-block w-100" />
+            </div>
+            <div class="carousel-item active">
+              <img src="Carousel/c5.png" alt="garage" class="d-block w-100" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Előző</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Következő</span>
+          </button>
+        </div>
+      </div>
+      <div class="content container-fluid p-4">
+        <h2 style="color: #e7222e; font-weight: bold;">Fékszervíz</h2>
         <p class="text-white">
           Olyan szerviz szolgáltatás melynek során a gépjármű fék berendezéseit
           és annak egységeit tatjuk karban vagy cseréljük újra. Vállaljuk
@@ -61,16 +140,17 @@
           fékpaddal be kell méretni kötelezően amit társcégünknél el tudnak
           végezni.
         </p>
-        <h2 class="text-white">Olajcsere</h2>
+        <h2 style="color: #e7222e; font-weight: bold;">Olajcsere</h2>
         <p class="text-white">
           Kínáljuk olajcsere szolgáltatásunkat mindazon ügyfeleink számára
           akiknek az olajcsere a kilométer perióduson vagy az időperióduson
-          kívül helyezkedik el. Ez általánosságban egy év vagy tízezer kilóméter. Egy
-          adott gépjárművön olajcsere során fokozottan ajánlott az olajszűrő és
-          a levegőszűrő cseréje új alkatrészre, illetve kilométer és állapot
-          függvényében a gázolajszűrő és pollenszűrők cseréje.
+          kívül helyezkedik el. Ez általánosságban egy év vagy tízezer
+          kilóméter. Egy adott gépjárművön olajcsere során fokozottan ajánlott
+          az olajszűrő és a levegőszűrő cseréje új alkatrészre, illetve
+          kilométer és állapot függvényében a gázolajszűrő és pollenszűrők
+          cseréje.
         </p>
-        <h2 class="text-white">Futómű szervíz</h2>
+        <h2 style="color: #e7222e; font-weight: bold;">Futómű szervíz</h2>
         <p class="text-white">
           Olyan szervíz szolgáltatás melynek során a gépjármű összes olyan
           alkatrészét ellenőrizzük, cseréljük vagy felújítjuk melyek összekötik
@@ -78,7 +158,7 @@
           cseréjét, szilentek cseréjét, gömbfejek, kormányösszekötők,
           lengéscsillapítók, lengőkarok és rugók cseréjét.
         </p>
-        <h2 class="text-white">Kuplung javítás, felújítás</h2>
+        <h2 style="color: #e7222e; font-weight: bold;">Kuplung javítás, felújítás</h2>
         <p class="text-white">
           Olyan szerviz szolgáltatás melynek során a váltó és motor közötti
           összeköttetést javítjuk vagy felújítjuk, esetleg csere alkatrésszel
@@ -90,13 +170,13 @@
           történő motor leállítás esetén csattanás hallatszik, extrém esetben a
           gépjármű karosszériája megremeg.
         </p>
-        <h2 class="text-white">Motor javítás, felújítás</h2>
+        <h2 style="color: #e7222e; font-weight: bold;">Motor javítás, felújítás</h2>
         <p class="text-white">
           Olyan szerviz szolgáltatás melynek során a motorban lévő alkatrészek
           állapotát ellenőrizzük, szükséges esetben cseréjük, felújítjuk. Ennél
           a szerviz szolgáltatásnál mindenképp előzetes egyeztetés szükséges.
         </p>
-        <h2 class="text-white">Turbó javítás, felújítás</h2>
+        <h2 style="color: #e7222e; font-weight: bold;">Turbó javítás, felújítás</h2>
         <p class="text-white">
           Olyan szerviz szolgáltatás melynek során turbó feltöltővel rendelkező
           autók turbóját és a turbóhoz kapcsolódó rendszer hibáját javítjuk.
@@ -104,7 +184,7 @@
           szag, illetve a folyamatos olajszint csökkenés. Turbók javítását,
           cseréjét rövid határidővel, garanciával vállaljuk.
         </p>
-        <h2 class="text-white">Generátor javítás, felújítás</h2>
+        <h2 style="color: #e7222e; font-weight: bold;">Generátor javítás, felújítás</h2>
         <p class="text-white">
           Olyan szerviz szolgáltatás melynek során feltárjuk, hogy a gépjármű
           elektromos ellátásába milyen hiba került. Opcionálisan vállaljuk
@@ -112,7 +192,7 @@
           autóvillamossággal nem foglalkozunk.
         </p>
       </div>
-      <div class="kapcsolat">
+      <div id="kapcsolat" class="kapcsolat">
         <h1>HD Garage</h1>
         <h3>Elérhetőségünk</h3>
         <p>2363 Felsőpakony, Ipar út 1.</p>
