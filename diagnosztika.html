@@ -20,7 +20,10 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark" data-bs-theme="dark">
+      <nav
+        class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark"
+        data-bs-theme="dark"
+      >
         <div class="container-fluid">
           <a class="navbar-brand text-white p-1 ps-3" href="index.html"
             >HD Garage</a
@@ -35,20 +38,44 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item dropdown px-3">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Szervíz</a>
-                    <ul class="dropdown-menu">
-                      <li><a href="autoszerviz.html" class="dropdown-item">Autószervíz</a></li>
-                      <li><a href="general.html" class="dropdown-item">Motorgenerál</a></li>
-                      <li><a href="diagnosztika.html" class="dropdown-item">Diagnosztika</a></li>
-                      <li><a href="diagnosztika.html" class="dropdown-item">Karbantartás</a></li>
-                    </ul>
+              <li class="nav-item dropdown px-3">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  >Szervíz</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="autoszerviz.html" class="dropdown-item"
+                      >Autószervíz</a
+                    >
                   </li>
+                  <li>
+                    <a href="general.html" class="dropdown-item"
+                      >Motorgenerál</a
+                    >
+                  </li>
+                  <li>
+                    <a href="diagnosztika.html" class="dropdown-item"
+                      >Diagnosztika</a
+                    >
+                  </li>
+                  <li>
+                    <a href="diagnosztika.html" class="dropdown-item"
+                      >Karbantartás</a
+                    >
+                  </li>
+                </ul>
+              </li>
               <li class="nav-item px-3">
                 <a class="nav-link" href=".kapcsolat">Hírek</a>
               </li>
               <li class="nav-item px-3">
-                <a class="nav-link" href="#kapcsolat" data-bs-scroll>Kapcsolat</a>
+                <a class="nav-link" href="#kapcsolat" data-bs-scroll
+                  >Kapcsolat</a
+                >
               </li>
             </ul>
           </div>
@@ -57,7 +84,12 @@
     </header>
     <article>
       <div class="kepvalto">
-        <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div
+          id="carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
           <div class="carousel-indicators">
             <button
               type="button"
@@ -161,16 +193,35 @@
           intézkedhetünk a javításról, mielőtt a probléma súlyosabbá válna.
         </p>
       </div>
-      <div id="kapcsolat" class="kapcsolat">
-        <h1>HD Garage</h1>
-        <div class="company">   
-          <h3>Elérhetőségünk</h3>
-          <p>2363 Felsőpakony, Ipar út 1.</p>
-          <p><span class="kiemelt">+36 20 389 9145</span></p>
+      <div id="kapcsolat" class="kapcsolat container-fluid">
+        <div class="row">
+          <h1 class="col-12 col-md-4">HD Garage</h1>
+          <div class="company col-12 col-md-4">
+            <h3>Elérhetőségünk</h3>
+            <p>2363 Felsőpakony, Ipar út 1.</p>
+            <p><span class="kiemelt">+36 20 389 9145</span></p>
+          </div>
+          <div class="nyitvatartas col-12 col-md-4">
+            <h3>Szervíz nyitvatartása</h3>
+            <p>Hétfő - Szombat:<span class="kiemelt"> 8:00 - 18:00</span></p>
+          </div>
         </div>
-        <div class="nyitvatartas">
-          <h3>Szervíz nyitvatartása</h3>
-          <p>Hétfő - Szombat:<span class="kiemelt"> 8:00 - 18:00</span></p>
+        <div class="row">
+          <div class="iconStorage col text-center">
+            <a
+              class="p-4 m-3"
+              href="https://www.facebook.com/profile.php?id=100090888117425"
+              style="text-decoration: none"
+            >
+              <img src="Icons/icons8-facebook-48.png" alt="facebbok" />
+            </a>
+            <a class="p-4 pb-3" href="" style="text-decoration: none">
+              <img src="Icons/icons8-instagram-48.png" alt="instagramm" />
+            </a>
+            <a class="p-4 pb-3" href="" style="text-decoration: none">
+              <img src="Icons/icons8-tiktok-48.png" alt="tiktok" />
+            </a>
+          </div>
         </div>
       </div>
     </article>
